@@ -5,14 +5,14 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the Laravel project from GitHub
-                git 'https://github.com/yourusername/your-laravel-project.git'
+                git 'https://github.com/ademBoujnah/laravel-project.git'
             }
         }
 
         stage('Build') {
             environment {
                 // Set up environment variables if needed (e.g., for Nexus credentials)
-                NEXUS_URL = 'https://nexus.example.com/repository/maven-releases/'
+                NEXUS_URL = 'http://localhost:8081/repository/nexus-jenkins/'
                 NEXUS_CREDENTIALS_ID = 'nexus-credentials'
             }
             steps {
