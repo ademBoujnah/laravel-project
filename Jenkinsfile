@@ -17,9 +17,7 @@ pipeline {
             }
             steps {
                 // Build the Docker images for the services (Composer, Nginx, PHP)
-                dir('/laravel-project') {  // Set the correct working directory here
-                    sh 'docker-compose build'
-                }
+                sh 'docker compose up'
             }
         }
 
