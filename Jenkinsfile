@@ -17,7 +17,7 @@ pipeline {
             }
             steps {
                 // Build the Docker images for the services (Composer, Nginx, PHP)
-                sh 'docker compose build'
+                sh 'docker compose build -f docker-compose.yaml'
             }
         }
 
