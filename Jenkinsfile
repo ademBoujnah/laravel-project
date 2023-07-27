@@ -16,10 +16,9 @@ pipeline {
                 NEXUS_CREDENTIALS_ID = 'nexus-credentials'
             }
             steps {
-                sh 'cd .. && pwd && ls'
-                sh 'find / -name docker-compose.yaml'
+                
                 // Build the Docker images for the services (Composer, Nginx, PHP)
-                sh 'docker compose build'
+                sh 'docker compose -f /var/jenkins_home/workspace/my-pipeline@script/8f7252b58c28b93729c01d583fa45bf05aadaad05da553aae9ff50916ed7f381/docker-compose.yaml up'
             }
         }
 
