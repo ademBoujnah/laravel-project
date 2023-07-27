@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the Laravel project from GitHub
-                git 'https://github.com/ademBoujnah/laravel-project.git'
+                bash 'git clone https://github.com/ademBoujnah/laravel-project.git'
             }
         }
 
