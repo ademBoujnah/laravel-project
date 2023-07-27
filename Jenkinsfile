@@ -17,6 +17,7 @@ pipeline {
             }
             steps {
                 sh 'cd .. && pwd && ls'
+                sh 'find / -name docker-compose.yaml'
                 // Build the Docker images for the services (Composer, Nginx, PHP)
                 sh 'docker compose build'
             }
