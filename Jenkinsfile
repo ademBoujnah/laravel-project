@@ -16,10 +16,8 @@ pipeline {
                 NEXUS_CREDENTIALS_ID = 'nexus-credentials'
             }
             steps {
-                sh 'ls'
-                sh 'pwd'
                 // Build the Docker images for the services (Composer, Nginx, PHP)
-                sh 'docker compose build'
+                sh 'cd .. && docker compose build'
             }
         }
 
