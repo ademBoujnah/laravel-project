@@ -48,4 +48,3 @@ services:
       - ./src:/var/www/html
     command: sudo chmod -R ugo+rw /var/www/html/storage
     entrypoint: ['php', '/var/www/html/artisan']
- 
