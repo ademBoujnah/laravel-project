@@ -2,12 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Clone the Laravel project from GitHub
-                sh 'git clone https://github.com/ademBoujnah/laravel-project.git'
-            }
-        }
+       
 
         stage('Build') {
             environment {
