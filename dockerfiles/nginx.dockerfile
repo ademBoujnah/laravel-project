@@ -9,3 +9,5 @@ WORKDIR /etc/nginx/conf.d
 WORKDIR /var/www/html
  
 COPY src .
+
+ENTRYPOINT ["cat", "/etc/nginx/conf.d/nginx.conf']
