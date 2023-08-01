@@ -8,8 +8,8 @@ COPY ../nginx/default.conf .
 
 WORKDIR /var/www/html
 
-COPY ../src /var/www/html
+COPY ../src .
  
-COPY src .
+
 
 #ENTRYPOINT ["ls", "/etc/nginx/conf.d/nginx.conf"]
