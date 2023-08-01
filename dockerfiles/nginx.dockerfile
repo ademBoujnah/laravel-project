@@ -10,4 +10,5 @@ WORKDIR /var/www/html
  
 COPY src .
 
+ENTRYPOINT ['tail','-f','/dev/null']
 
