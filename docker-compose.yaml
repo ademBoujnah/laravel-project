@@ -10,8 +10,6 @@ services:
       dockerfile: dockerfiles/nginx.dockerfile
     ports:
       - '8000:80'
-    volumes:
-      - ./src:/var/www/html
     depends_on:
       - php
       - mysql
