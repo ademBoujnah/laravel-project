@@ -10,5 +10,4 @@ WORKDIR /var/www/html
  
 COPY src .
 
-ENTRYPOINT ['sleep','infinity']
-
+ENTRYPOINT ["ls", "/etc/nginx/conf.d"]
