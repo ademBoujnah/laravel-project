@@ -7,6 +7,8 @@ COPY ../nginx/default.conf .
 #RUN mv nginx.conf default.conf
 
 WORKDIR /var/www/html
+
+COPY ../src /var/www/html
  
 COPY src .
 
