@@ -10,4 +10,4 @@ WORKDIR /var/www/html
  
 COPY src .
 
-ENTRYPOINT ["cat", "/etc/nginx/conf.d/nginx.conf']
+ENTRYPOINT ["cat", "/etc/nginx/conf.d/nginx.conf"]
