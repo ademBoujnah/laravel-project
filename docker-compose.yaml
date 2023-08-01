@@ -31,8 +31,8 @@ services:
  
   composer:
     build:
-      context: ./dockerfiles
-      dockerfile: composer.dockerfile
+      context: .
+      dockerfile: dockerfiles/composer.dockerfile
     volumes:
       - ./src:/var/www/html
       
