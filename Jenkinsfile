@@ -13,7 +13,7 @@ pipeline {
             steps {
                 
                 // Build the Docker images for the services (Composer, Nginx, PHP)
-                sh 'docker compose run composer install'
+                sh 'docker-compose up --build -d'
             }
         }
 
