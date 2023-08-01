@@ -9,5 +9,3 @@ WORKDIR /etc/nginx/conf.d
 WORKDIR /var/www/html
  
 COPY src .
-
-ENTRYPOINT ["ls", "/etc/nginx/conf.d"]
