@@ -33,8 +33,7 @@ services:
     build:
       context: .
       dockerfile: dockerfiles/composer.dockerfile
-      volumes:
-      - ./src:/var/www/html
+     
       
  
  
